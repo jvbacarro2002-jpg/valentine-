@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For Kylahmeh ❤️</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, #ff4e8a, #ff0000);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 120px;
+            overflow: hidden;
+            color: white;
+        }
+        h1 {
+            font-size: 45px;
+            text-shadow: 2px 2px 5px #000;
+        }
+        p {
+            font-size: 22px;
+            margin-top: 20px;
+        }
+        button {
+            padding: 15px 35px;
+            font-size: 22px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            margin: 20px;
+            position: absolute;
+        }
+        #yesBtn {
+            background-color: #ff69b4;
+            color: white;
+            position: static;
+        }
+        #noBtn {
+            background-color: #ff1744;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Kylahmeh, will you be my Valentine? 💖</h1>
+<p>From: JVlat</p>
+
+<button id="yesBtn" onclick="yesClicked()">Yes 💘</button>
+<button id="noBtn" onmouseover="moveButton()">No 😜</button>
+
+<script>
+    function yesClicked() {
+        document.body.innerHTML = `
+        <h1>Yaaay! ❤️</h1>
+        <p style="font-size:28px;">
+        I just wanna say I love you so much my honeybunch sugar plum. 🥰<br><br>
+        You make my world brighter, my days happier, and my heart fuller.<br>
+        I'm so lucky to have you, Kylahmeh. 💗<br><br>
+        Forever your Valentine,<br>
+        <b>JVlat</b> 💞
+        </p>
+        `;
+    }
+
+    function moveButton() {
+        var btn = document.getElementById("noBtn");
+        btn.style.top = Math.random() * window.innerHeight + "px";
+        btn.style.left = Math.random() * window.innerWidth + "px";
+    }
+</script>
+
+</body>
+</html>
